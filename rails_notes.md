@@ -1,6 +1,7 @@
 ### Doubts
 + can render method take full urls???  
 + learn rails refactoring
+***
 
 ### controller
 + Controller receives specific requests for the application.  
@@ -61,7 +62,8 @@ ex- params[:username], params[:age],etc.
 2. "git add ."  
 3. git commit -m "Initial Commit"
 4. "git remote add origin https://github.com/ravi8470/<filename>"
-5. "git push -u origin master"
+5. "git push -u origin master"  
+
 #### For saving changes
 1. "git commit -a -m "description"
 2. "git push -u origin master"
