@@ -2,18 +2,18 @@
 + can render method take full urls???  
 + learn rails refactoring  
  ***
-### controller 
+### controller
 + Controller receives specific requests for the application.  
 + this is where the info is collected.  
-+ controller name while generating one should be plural. eg. aritcles  
++ controller name while generating one should be plural.eg.aritcles  
 + CRUD methods are defined in the controller  
 + Only public methods can be actions for controllers.  
  ***
-### Routing 
+### Routing
 + decides which controller receives which requests.
 + a route is basically a web url.So for a route/web url to work it needs + to have a controller defined to serve the request.
  ***
-### Action 
+### Action
 + collects information to provide it to a view.
  ***
 ### View
@@ -28,7 +28,7 @@
 ### Forms
 + <%= f.submit :Go%>/*this is how to change submit button's text now submit button will read Go*/
 + New form submissions is handled by the create method.
-+ when a form is submitted its fields are sent to rails as parameters and can be used inside a controller's method. 
++ when a form is submitted its fields are sent to rails as parameters and can be used inside a controller's method.
 ex- params[:username], params[:age],etc.
 + all form fields with errors are automatically wrapped with a div class called "field_with_errors"
 + text_field is used for single line input and text_area is used for multi-line inputs.
@@ -46,7 +46,7 @@ ex- params[:username], params[:age],etc.
 ### Class
 + Class names in ruby must begin with a capital letter.
  ***
-### Standard CRUD action ordering: 
+### Standard CRUD action ordering:
 + index-show-new-edit-create-update-destroy:ALL PUBLIC METHODS
  ***
 ### SQLITE3
