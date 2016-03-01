@@ -1,6 +1,7 @@
 ### Doubts
 + can render method take full urls???  
-+ learn rails refactoring      
++ learn rails refactoring
+     
 ### controller
 + Controller receives specific requests for the application.  
 + this is where the info is collected.  
