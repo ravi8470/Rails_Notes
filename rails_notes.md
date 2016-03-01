@@ -51,5 +51,14 @@ Doubts
 MIGRATIONS
 --when rake db:migrate is run only those tables that are not created are constructed.
 
-
+###Github posting
+####New file
+1."git init" - add new repository  
+2."git add ."  
+3.git commit -m "Initial Commit"
+4."git remote add origin https://github.com/ravi8470/<filename>"
+5."git push -u origin master"
+####For saving changes
+1."git commit -a -m "description"
+2."git push -u origin master"
 
