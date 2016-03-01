@@ -1,4 +1,5 @@
-controller receives specific requests for the application.
+#controller 
+1. Controller receives specific requests for the application.
 ---this is where the info is collected.
 ---controller name while generating one should be plural. eg. aritcles
 ---CRUD methods are defined in the controller
