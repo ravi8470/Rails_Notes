@@ -1,13 +1,13 @@
 ###Doubts
-+can render method take full urls???
-+learn rails refactoring
++can render method take full urls???  
++learn rails refactoring  
 ***
 ###controller 
-+Controller receives specific requests for the application.
-+this is where the info is collected.
-+controller name while generating one should be plural. eg. aritcles
-+CRUD methods are defined in the controller
-+Only public methods can be actions for controllers.
++Controller receives specific requests for the application.  
++this is where the info is collected.  
++controller name while generating one should be plural. eg. aritcles  
++CRUD methods are defined in the controller  
++Only public methods can be actions for controllers.  
 ***
 ###Routing 
 +decides which controller receives which requests.
