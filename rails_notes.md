@@ -1,12 +1,19 @@
 ### Doubts
 + can render method take full urls???  
 + learn rails refactoring
-***
 
+### Ruby
++ All ruby objects are true, even 0. Only 'nil' and 'false' are false in ruby.
++ An array index of -1, ie, a[-1] represents the last array element.
++ self is used to denote that same object in a function, i.e. self == self.reverse
+
+### Partials
++ name starts with a underscore
++ used as render '<location of partial file>'
 ### controller
 + Controller receives specific requests for the application.  
 + this is where the info is collected.  
-+ controller name while generating one should be plural.eg.aritcles  
++ controller name while generating one should be plural, eg aritcles  
 + CRUD methods are defined in the controller  
 + Only public methods can be actions for controllers  
 
@@ -38,7 +45,7 @@ ex- params[:username], params[:age],etc.
 + and the corresponding database table uses a plural name.
 + when a form is being submitted for editing rather than new submission must use PATCH HTTP method.
 + passing a symbol with the same name,say ':article' instead of an instance variable of same name say '@article' leads to the same behaviour.
-+ scaffold and models can be roughly interchangable terms.   
++ scaffold and models can be roughly interchangable terms.The naming convention is same for both, i.e. singular.
 
 ### DB
 + maybe need to run migration file to create tables in the database. or to create the database structure.    
@@ -54,6 +61,7 @@ ex- params[:username], params[:age],etc.
 
 ### MIGRATIONS
 + when rake db:migrate is run only those tables that are not created are constructed.
++ Note the syntax for adding extra features into a table...here the table's name is used instead of the model's so we have 'users' instead of 'user'-->rails generate migration add_index_to_users_email
 
 ### Github posting
 
