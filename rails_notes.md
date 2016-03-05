@@ -2,6 +2,7 @@
 + can render method take full urls???  
 + learn rails refactoring
 + Callbacks in rails http://api.rubyonrails.org/v4.0.0/classes/ActiveRecord/Callbacks.html
++ How to deploy to production with ssl -7.4.4
 
 ### Ruby
 + All ruby objects are true, even 0. Only 'nil' and 'false' are false in ruby.
@@ -17,6 +18,10 @@
 + controller name while generating one should be plural, eg aritcles  
 + CRUD methods are defined in the controller  
 + Only public methods can be actions for controllers  
+
+### helpers
++ They are functions written to add more functionality to the view pages.
++ By default, methods defined in any helper file are automatically available in any view
 
 ### Routing
 + decides which controller receives which requests.
@@ -50,7 +55,9 @@ ex- params[:username], params[:age],etc.
 
 ### DB
 + maybe need to run migration file to create tables in the database. or to create the database structure.
-+ adding index to columns whose data you need to check if it exists makes the searches faster.   
++ adding index to columns whose data you need to check if it exists makes the searches faster, because index notes all the occurrences of a particular entry.  
++ always create and run a new migration for any changes in DB structure.
++ create a production database by "$ bundle exec rake db:migrate RAILS_ENV=production"
 
 ### Class
 + Class names in ruby must begin with a capital letter.    
@@ -63,14 +70,15 @@ ex- params[:username], params[:age],etc.
 
 ### MIGRATIONS
 + when rake db:migrate is run only those tables that are not created are constructed.
++ ending a migration name with the tables' name helps rails to automatically infer the table we're interested in.
 
 ### Github posting
 
-#### New file
-1. "git init" - add new repository  
-2. "git add ."  
+#### adding new repository
+1. "git init" - add the git folder
+2. "git add ."  -add all files in that folder recursively
 3. git commit -m "Initial Commit"
-4. "git remote add origin https://github.com/ravi8470/<filename>"
+4. "git remote add origin https://github.com/ravi8470/<repository_name>"
 5. "git push -u origin master"  
 
 #### For saving changes
