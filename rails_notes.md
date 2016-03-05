@@ -1,6 +1,7 @@
-### Doubts
+### Doubts and todo
 + can render method take full urls???  
 + learn rails refactoring
++ Callbacks in rails http://api.rubyonrails.org/v4.0.0/classes/ActiveRecord/Callbacks.html
 
 ### Ruby
 + All ruby objects are true, even 0. Only 'nil' and 'false' are false in ruby.
@@ -48,7 +49,8 @@ ex- params[:username], params[:age],etc.
 + scaffold and models can be roughly interchangable terms.The naming convention is same for both, i.e. singular.
 
 ### DB
-+ maybe need to run migration file to create tables in the database. or to create the database structure.    
++ maybe need to run migration file to create tables in the database. or to create the database structure.
++ adding index to columns whose data you need to check if it exists makes the searches faster.   
 
 ### Class
 + Class names in ruby must begin with a capital letter.    
@@ -61,7 +63,6 @@ ex- params[:username], params[:age],etc.
 
 ### MIGRATIONS
 + when rake db:migrate is run only those tables that are not created are constructed.
-+ Note the syntax for adding extra features into a table...here the table's name is used instead of the model's so we have 'users' instead of 'user'-->rails generate migration add_index_to_users_email
 
 ### Github posting
 
