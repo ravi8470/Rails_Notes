@@ -2,6 +2,7 @@
 + can render method take full urls???  
 + learn rails refactoring
 + Callbacks in rails http://api.rubyonrails.org/v4.0.0/classes/ActiveRecord/Callbacks.html
+& http://guides.rubyonrails.org/v3.2.13/active_record_validations_callbacks.html
 + How to deploy to production with ssl -7.4.4
 
 ### Ruby
@@ -9,9 +10,13 @@
 + An array index of -1, ie, a[-1] represents the last array element.
 + self is used to denote that same object in a function, i.e. self == self.reverse
 
+### General
++ HTTP is a stateless protocol. When a user makes a second request all the variables get set to their defults
+ and instance variables to nil.
 ### Partials
 + name starts with a underscore
 + used as render '<location of partial file>'
+
 ### controller
 + Controller receives specific requests for the application.  
 + this is where the info is collected.  
@@ -21,7 +26,7 @@
 
 ### helpers
 + They are functions written to add more functionality to the view pages.
-+ By default, methods defined in any helper file are automatically available in any view
++ By default, methods defined in any helper file are automatically available in any view but not in any controller. To do so its helper controller must be included in the application_helper.rb
 
 ### Routing
 + decides which controller receives which requests.
@@ -54,7 +59,7 @@ ex- params[:username], params[:age],etc.
 + scaffold and models can be roughly interchangable terms.The naming convention is same for both, i.e. singular.
 
 ### DB
-+ maybe need to run migration file to create tables in the database. or to create the database structure.
++ Migrations need to be run to actually create tables in the database.
 + adding index to columns whose data you need to check if it exists makes the searches faster, because index notes all the occurrences of a particular entry.  
 + always create and run a new migration for any changes in DB structure.
 + create a production database by "$ bundle exec rake db:migrate RAILS_ENV=production"
@@ -82,5 +87,6 @@ ex- params[:username], params[:age],etc.
 5. "git push -u origin master"  
 
 #### For saving changes
-1. "git commit -a -m "description"
-2. "git push -u origin master"
++ git add .
++ "git commit -a -m "description"
++ "git push -u origin master"
