@@ -4,6 +4,7 @@
 + Callbacks in rails http://api.rubyonrails.org/v4.0.0/classes/ActiveRecord/Callbacks.html
 & http://guides.rubyonrails.org/v3.2.13/active_record_validations_callbacks.html
 + How to deploy to production with ssl -7.4.4
++ Use of has_many through in joining tables.
 
 ### Ruby
 + All ruby objects are true, even 0. Only 'nil' and 'false' are false in ruby.
@@ -13,9 +14,10 @@
 ### General
 + HTTP is a stateless protocol. When a user makes a second request all the variables get set to their defults
  and instance variables to nil.
+
 ### Partials
 + name starts with a underscore
-+ used as render '<location of partial file>'
++ used as render 'location of partial file'
 
 ### controller
 + Controller receives specific requests for the application.  
@@ -23,6 +25,7 @@
 + controller name while generating one should be plural, eg aritcles  
 + CRUD methods are defined in the controller  
 + Only public methods can be actions for controllers  
++ If a method is needed by more than 1 controller then we can move it to one of the helpers and then include it in application_controller.rb
 
 ### helpers
 + They are functions written to add more functionality to the view pages.
@@ -63,6 +66,7 @@ ex- params[:username], params[:age],etc.
 + adding index to columns whose data you need to check if it exists makes the searches faster, because index notes all the occurrences of a particular entry.  
 + always create and run a new migration for any changes in DB structure.
 + create a production database by "$ bundle exec rake db:migrate RAILS_ENV=production"
++ Rails expects foreign key of the form <class_id> where class means the class name of the parent " database table" from which we are referencing the other table. This key has to be an attribute in the other table. Using this naming convention automatically creates foreign keys.
 
 ### Class
 + Class names in ruby must begin with a capital letter.    
@@ -90,3 +94,6 @@ ex- params[:username], params[:age],etc.
 + git add .
 + "git commit -a -m "description"
 + "git push -u origin master"
+
+### methods
++ Using ! after the name of a method causes it to raise an exception on failure.
