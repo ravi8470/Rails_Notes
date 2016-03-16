@@ -60,6 +60,7 @@ ex- params[:username], params[:age],etc.
 + when a form is being submitted for editing rather than new submission must use PATCH HTTP method.
 + passing a symbol with the same name,say ':article' instead of an instance variable of same name say '@article' leads to the same behaviour.
 + scaffold and models can be roughly interchangable terms.The naming convention is same for both, i.e. singular.
++ The name of the database table is the plural name of the model or the class name.
 
 ### DB
 + Migrations need to be run to actually create tables in the database.
